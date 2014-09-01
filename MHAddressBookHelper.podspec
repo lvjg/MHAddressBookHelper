@@ -77,7 +77,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "MHAddressBookHelper/*.{h,m}"
+  s.source_files  = "MHAddressBookHelper, MHAddressBookHelper/*.{h,m}"
   s.exclude_files = "MHAddressBookHelper/Exclude"
 
   # s.public_header_files = "MHAddressBookHelper/*.h"
