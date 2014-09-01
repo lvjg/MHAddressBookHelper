@@ -17,16 +17,8 @@ Pod::Spec.new do |s|
 
   s.name         = "MHAddressBookHelper"
   s.version      = "0.0.1"
-  s.summary      = "A short description of MHAddressBookHelper."
+  s.summary      = "A helper for addressbook."
 
-  s.description  = <<-DESC
-                   A longer description of MHAddressBookHelper in Markdown format.
-
-                   * Think: Why did you write this? What is the focus? What does it do?
-                   * CocoaPods will be using this to generate tags, and improve search results.
-                   * Try to keep it short, snappy and to the point.
-                   * Finally, don't worry about the indent, CocoaPods strips it!
-                   DESC
 
   s.homepage     = "https://github.com/lvjg/MHAddressBookHelper"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
@@ -65,7 +57,7 @@ Pod::Spec.new do |s|
   #
 
   # s.platform     = :ios
-  s.platform     = :ios, "5.0"
+  s.platform     = :ios, "6.0"
 
 
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -74,7 +66,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/lvjg/MHAddressBookHelper.git", :version => "0.0.1" }
+  s.source       = { :git => "https://github.com/lvjg/MHAddressBookHelper.git", :tag => "v0.0.1" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -85,7 +77,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "MHAddressBookHelper", "MHAddressBookHelper/*.{h,m}"
+  s.source_files  = "MHAddressBookHelper/*.{h,m}"
   s.exclude_files = "MHAddressBookHelper/Exclude"
 
   # s.public_header_files = "MHAddressBookHelper/*.h"
@@ -101,8 +93,6 @@ Pod::Spec.new do |s|
 
   # s.resource  = "icon.png"
   # s.resources = "Resources/*.png"
-
-  # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
 
   # ――― Project Linking ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
