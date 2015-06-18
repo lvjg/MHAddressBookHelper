@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name      = 'MHAddressBookHelper'
-s.version   = ‘0.0.2’
+s.version   = '0.0.2'
 s.license   = 'MIT'
 s.summary   = 'A helper for addressbook.'
 s.homepage  = 'https://github.com/lvjg/MHAddressBookHelper'
