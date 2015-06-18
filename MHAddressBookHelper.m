@@ -72,14 +72,16 @@
 // Prompt the user for access to their Address Book data
 + (void)requestAddressBookAccess:(ABAddressBookRef)addressBookRef actionBlock:(void (^)(ABAddressBookRef addressBookRef))actionBlock
 {
-    
+    dispatch_semaphore_t semaphore = dispatch_semaphore_create(0);
     ABAddressBookRequestAccessWithCompletion(addressBookRef, ^(bool granted, CFErrorRef error)
                                              {
                                                  if (granted)
                                                  {
                                                      actionBlock(addressBookRef);
                                                  }
+                                                 dispatch_semaphore_signal(semaphore);
                                              });
+    dispatch_semaphore_wait(semaphore, DISPATCH_TIME_FOREVER);
 }
 
 @end
